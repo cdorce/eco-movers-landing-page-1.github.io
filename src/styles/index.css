@@ -10,151 +10,194 @@
 
 /* Reset some default styles for consistency */
 body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0; 
 }
 
 body, html {
-    font-family: var(--font-2);
-    height: 100%;
+  font-family: var(--font-2);
+  height: 100%;
 }
   
-  /* Basic styling for the header */
+/* Basic styling for the header */
 header {
-    background-color: var(--color-dark-100);
-    color: #fff;
+  background-color: var(--color-dark-100);
+  color: #fff;
     
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo img {
-    width: 140px;
-    background-color: var(--color-white-50);
+   width: 140px;
+  background-color: var(--color-white-50);
 }
 
 .phone-number {
-    font-size: var(--h1);
-    margin-top: 25px;
+  font-size: var(--h1);
+  margin-top: 25px;
 
 }
 
 .phone-number img {
-    width: 20px;
+  width: 20px;
 }
-  /* Styling for the hero section */
+
+/* Styling for the hero section */
 
 
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/img/img-1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/img/img-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
 }
 
 .hero-content {
-    display: flex;
-    justify-content: space-between;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
 
 h2 span{
-    color:#0CAA41 ;
-    font-size: 80px;
-    
+  color:#0CAA41 ;
+  font-size: 80px;   
 }
 
 .why-us {
-    background-color: rgba(48, 44, 44, 0.445);
-    backdrop-filter: blur(5px);
-    padding: 90px 40px;   
+  background-color: rgba(48, 44, 44, 0.445);
+  backdrop-filter: blur(5px);
+  padding: 90px 40px;   
 }
 
 .why-us h2{
-    font-size: 60px
+  font-size: 60px
 }
 
 li {
-    font-size: 30px;
-    list-style: none;
-    padding: 10px 50px;
-    background-image: url('/src/icons/check-mark.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 40px;
-    
+  font-size: 30px;
+  list-style: none;
+  padding: 10px 50px;
+  background-image: url('/src/icons/check-mark.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;  
   }
 
+/* Style for the form in the hero section */
 
+form p {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
 
-
-  /* Style for the form in the hero section */
 .est-form {
-    background-color:var(--color-dark-100) ;
-    margin: 10% 0;
-    border-radius: 5px;
-    padding: 20px 10px;
+  background-color:var(--color-dark-100) ;
+  margin: 10% 0;
+  border-radius: 5px;
+  padding: 40px 10px;
+  text-align: center;
 }
 
-  /* Style for the services section */
+
+form input {
+  width: 275px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-radius: 3px;
+  border: none;
+}
+
+input:focus{
+  background-color: #c4f8d5fd;
+}
+
+form #submit {
+  background-color: #0CAA41;
+  text-align: center;
+  border: 0px;
+  border-radius: 3px;
+  color: var(--color-white-100);
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+
+}
+
+::placeholder {
+  color: rgb(167, 167, 167);
+  opacity: 1; /* Firefox */
+  padding:5px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#message-box {
+  height: 70px;
+  resize: none;
+}
+
+
+/* Style for the services section */
 .services {
-    padding: 20px;
+  padding: 20px;
 }
-  /* Style for the service cards */
+/* Style for the service cards */
 .service-card {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 
-  /* Style for the "Why Choose Us" section */
+/* Style for the "Why Choose Us" section */
 .why-choose-us {
-    padding: 20px;
+  padding: 20px;
 }
-  /* Style for the testimonials section */
+
+/* Style for the testimonials section */
 .testimonials {
-    padding: 20px;
+  padding: 20px;
 }
 
-  /* Style for the two-columns section */
+/* Style for the two-columns section */
 .two-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-  /* Style for the company highlights */
+/* Style for the company highlights */
 .company-highlights {
-    flex: 1 1 300px; /* Adjust as needed */
-    /* Your styling for the company highlights */
+  flex: 1 1 300px; /* Adjust as needed */
+  /* Your styling for the company highlights */
 }
 
-  /* Basic styling for the footer */
+/* Basic styling for the footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
-  /* Media queries for responsiveness */
+/* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
-    .hero {
-      flex-direction: column;
+  .hero {
+    flex-direction: column;
       text-align: center;
-    }
+  }
 
-    .estimate-form,
-    .company-highlights {
+  .estimate-form,
+  .company-highlights {
       flex: 1 1 100%; /* Full width on smaller screens */
-    }
+  }
 }
