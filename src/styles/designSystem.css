@@ -35,7 +35,7 @@
     --font-1:'Playfair Display', serif;
     --font-2:'Montserrat', sans-serif;
 
-    --color-dark-100:rgba(41, 33, 33, 1);
+    --color-dark-100:rgb(0, 0, 0);
     --color-dark-75:rgba(41, 33, 33, 0.75);
     --color-dark-50:rgba(41, 33, 33, 0.50);
     --color-dark-25:rgba(41, 33, 33, 0.25);
@@ -142,12 +142,15 @@
 .text-center {
     text-align: center;
 }
+
+
 .container {
     max-width: 1140px;
     width: 95%;
     margin: auto;
     
 }
+
 .responsive-image {
     max-width: 100%;
     height: auto;
@@ -238,12 +241,6 @@
     background-color: var(--color-dark-25);
     box-shadow: 0.2px 5px 20px rgb(97, 95, 95);
 }
-
-
-
-
-
-
 
 
 

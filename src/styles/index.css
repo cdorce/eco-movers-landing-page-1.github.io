@@ -1,32 +1,106 @@
+#0CAA41
+#80CE11
+
+#D9D9D9
+#FFFFFF
+
+#262929
+#101010
+
 
 /* Reset some default styles for consistency */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
+    
+}
+
+body, html {
+    font-family: var(--font-2);
+    height: 100%;
 }
   
   /* Basic styling for the header */
 header {
-    background-color: #333;
+    background-color: var(--color-dark-100);
     color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-  
-  /* Styling for the hero section */
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo img {
+    width: 140px;
+    background-color: var(--color-white-50);
+}
+
+.phone-number {
+    font-size: var(--h1);
+    margin-top: 25px;
+
+}
+
+.phone-number img {
+    width: 20px;
+}
+  /* Styling for the hero section */
+
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/img/img-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+h2 span{
+    color:#0CAA41 ;
+    font-size: 80px;
+    
+}
+
+.why-us {
+    background-color: rgba(48, 44, 44, 0.445);
+    backdrop-filter: blur(5px);
+    padding: 90px 40px;   
+}
+
+.why-us h2{
+    font-size: 60px
+}
+
+li {
+    font-size: 30px;
+    list-style: none;
+    padding: 10px 50px;
+    background-image: url('/src/icons/check-mark.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+    
+  }
+
+
+
+
   /* Style for the form in the hero section */
-.estimate-form {
-    /* Your form styling here */
-    flex: 1 1 300px; /* Adjust as needed */
-    margin-bottom: 20px;
+.est-form {
+    background-color:var(--color-dark-100) ;
+    margin: 10% 0;
+    border-radius: 5px;
+    padding: 20px 10px;
 }
 
   /* Style for the services section */
