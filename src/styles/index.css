@@ -146,6 +146,27 @@ form #submit {
 
 
 /* Style for the services section */
+.logos {
+  background-color: #0CAA41;
+  padding: 20px;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.services-logo {
+  width: 100px;
+  fill: #ddd;
+}
+
+svg {
+  fill: white;
+}
+
+
 .services {
   padding: 20px;
 }
