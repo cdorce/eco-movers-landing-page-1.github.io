@@ -17,6 +17,7 @@ body, h1, h2, p, ul {
 body, html {
   font-family: var(--font-2);
   height: 100%;
+  font-size: 62.5%;
 }
   
 /* Basic styling for the header */
@@ -54,14 +55,14 @@ header .container {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   height: 100%;
 }
 
 .hero-content {
-  display: flex;
-  justify-content: space-between;
   color: white;
+  display: flex;
+  display: flex;
+  flex-direction: row;
 }
 
 h2 span{
@@ -72,11 +73,13 @@ h2 span{
 .why-us {
   background-color: rgba(48, 44, 44, 0.445);
   backdrop-filter: blur(5px);
-  padding: 90px 40px;   
+  padding: 90px 40px;  
+  height: 100vh;
 }
 
+
 .why-us h2{
-  font-size: 60px
+  font-size: 60px;
 }
 
 li {
@@ -104,6 +107,7 @@ form p {
   border-radius: 5px;
   padding: 40px 10px;
   text-align: center;
+  height: 100%;
 }
 
 
@@ -157,25 +161,99 @@ form #submit {
 
 }
 
-.services-logo {
-  width: 100px;
-  fill: #ddd;
+.logo-section i{
+  font-size: 70px;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 15px;
 }
 
-svg {
-  fill: white;
+.logo-section i:hover{
+  color: var(--color-white-75);
+
 }
 
+.logo-section div{
+  display: grid;
+  place-items: center;
+}
+
+.logo-section div h4{
+  text-align: center;
+  color: var(--color-white-75);
+  font-size: 2.5rem;
+}
+
+/* Style for the service cards */
 
 .services {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+
 }
-/* Style for the service cards */
-.service-card {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 15px;
+.service-grid{
+  display: grid;
+  width: 130rem;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+@media (max-width: 60em) {
+  .service-grid {
+    grid-gap: 3rem;
+  }
+}
+
+.service-card{
+  background-color: #0caa41cc;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.service__header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding-top: 5rem;
+  
+}
+
+.card_img{
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.card_content{
+  padding: 3rem;
+}
+
+.card_header{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-white-100);
+  margin-bottom: 1.5rem;
+
+}
+
+.card_text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #494949;
+  margin-bottom: 2.5rem;
 }
 
 /* Style for the "Why Choose Us" section */
