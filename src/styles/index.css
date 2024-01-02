@@ -224,9 +224,16 @@ form #submit {
   text-align: center;
   font-weight: bold;
   font-size: 4rem;
-  text-transform: uppercase;
-  padding-top: 5rem;
-  
+  padding-top: 3rem;
+}
+
+.service__header::after{
+  content: '';
+  background:#0caa41cc ;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
 }
 
 .card_img{
@@ -241,7 +248,7 @@ form #submit {
 }
 
 .card_header{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-white-100);
   margin-bottom: 1.5rem;
@@ -257,27 +264,115 @@ form #submit {
 }
 
 /* Style for the "Why Choose Us" section */
-.why-choose-us {
-  padding: 20px;
+.img-why-us {
+  position: relative;
+  width: 100%;
+  background: url('/src/img/moving-van-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-white-100);
 }
 
-/* Style for the testimonials section */
-.testimonials {
-  padding: 20px;
+.color-overlay{
+  min-height: 60vh;
+  background-color: rgba(0, 0, 0, 0.842);
 }
 
-/* Style for the two-columns section */
-.two-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
+.why-us-content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-/* Style for the company highlights */
-.company-highlights {
-  flex: 1 1 300px; /* Adjust as needed */
-  /* Your styling for the company highlights */
+.why-us-content h2{
+  font-size: 4rem;
+}
+
+.why-us-content h2::after{
+  content: '';
+  background:#0caa41cc ;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.why-us-cards-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 6rem;
+  margin-top: 6rem;
+}
+
+.card-container p{
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 2rem;
+  color: var(--color-white-75);
+}
+
+.card-container i{
+  font-size: 3rem;
+  color: #0CAA41;
+  border-radius: 50%;
+
+}
+/* Testimonial Section */
+.testimonials{
+  margin: 50px auto;
+}
+
+.testimonials h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.testimonials h2::after{
+  content: '';
+  background:#0caa41cc ;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.testimonials .row{
+  margin-top: 30px;
+  
+}
+
+.col-md-4{
+  margin: 40px auto;
+}
+
+.profile{
+  padding: 70px 10px 10px;
+  background-color: #9debb788;
+  border-radius: 10px;
+}
+
+
+
+.profile img{
+  top: -60px;
+  left: calc(50% -50%);
+}
+
+.user{
+  width:120px ;
+  height: 120px;
+  border-radius: 50%;
+  
+}
+
+blockquote{
+  font-size: 1.2rem;
 }
 
 /* Basic styling for the footer */
