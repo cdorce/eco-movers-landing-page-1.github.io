@@ -357,10 +357,15 @@ form #submit {
   border-radius: 10px;
 }
 
+.profile:hover{
+ box-shadow: 5px 5px 5px rgba(187, 187, 181, 0.568);
+ transition: 0.4s;
+}
+
 
 
 .profile img{
-  top: -60px;
+  top: -50px;
   left: calc(50% -50%);
 }
 
@@ -368,6 +373,7 @@ form #submit {
   width:120px ;
   height: 120px;
   border-radius: 50%;
+  margin-bottom: 20px;
   
 }
 
