@@ -65,7 +65,7 @@ header .container {
   flex-direction: row;
 }
 
-h2 span{
+.why-us h2 span{
   color:#0CAA41 ;
   font-size: 80px;   
 }
@@ -82,7 +82,7 @@ h2 span{
   font-size: 60px;
 }
 
-li {
+.why-us  li{
   font-size: 30px;
   list-style: none;
   padding: 10px 50px;
@@ -380,6 +380,73 @@ form #submit {
 blockquote{
   font-size: 1.2rem;
 }
+
+/*two photo and form section*/
+.two-photos-section{
+display: flex;
+
+}
+
+.left-photo-section{
+  background-color: #0CAA41;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.5)), url("/src/img/packing.jpg");
+  width: 50%;
+  height: 60vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-photo-section{
+  
+  background-color: yellow;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.5)), url("/src/img/about-history-image.webp");
+  
+  width: 50%;
+  height: 60vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.left-content{
+  color: var(--color-white-100);
+  width: 60%;
+  margin: auto;
+  padding: auto;
+}
+.left-content h2{
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-top: 20%;
+}
+
+.left-content span{
+  color:#0caa41cc ;
+}
+
+.left-content li {
+  font-size: 20px;
+  list-style: none;
+  padding: 10px 40px;
+  background-image: url('/src/icons/check-mark.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30px;  
+  }
+
+.form2{
+  width: 35%;
+  height: 90%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+.form2 p{
+  color: #fff;
+}
+
 
 /* Basic styling for the footer */
 footer {
