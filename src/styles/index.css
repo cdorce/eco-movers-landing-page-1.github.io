@@ -22,8 +22,6 @@ body, html {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  
-    
 }
 
 .logo img {
@@ -602,15 +600,15 @@ footer h2 {
   .container-pdn{
     padding: 0%;
   }
-  header {
+
+  .header-container{
     display: block;
     text-align: center;
-    
   }
 
   .phone-number {
     background-color: #0CAA41;
-    
+    margin-top: 0%;   
   }
 
   .est-form {
@@ -637,18 +635,67 @@ footer h2 {
   .why-us {
     height: 100vh;
     margin-right: 30px;
+    width: 100%;
   }
 
   .why-us  li{
-    font-size: 2rem;}
+    font-size: 2.2rem;}
 
   .why-us h2{
     font-size: 4.8rem;
   }
   
   .why-us h2 span{
-    font-size: 40px;   
+    font-size: 5.4rem;   
   }
+
+
+  .est-form {
+    width: 80%;
+    margin: auto;
+
+  }
+
+  .logo-section i{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+
+  .logo-section div h4{
+    font-size: 1.5rem;
+  }
+  
+
+  .service__header{
+    font-size: 4rem;
+  }
+
+  .why-us-content h2{
+    font-size: 4rem;
+    padding-top: 0px;
+  }
+
+  .testimonials h2{
+    font-size: 4rem;
+  }
+
+
+  .testimonials-container{
+    padding: 0% 5%  }
+
+
+  .why-us-cards-container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    width: 95vw;
+  }
+
+  .why-us-content p{
+    font-size:1.3rem;
+
+  }
+  
 
   .two-photos-section{
     display: flex;
@@ -666,38 +713,173 @@ footer h2 {
 
   }
 
+  .right-photo-section .est-form{
+    width: 75%;
+    padding: 10px 20px;
+  }
+
+
   .left-content h2{
-    font-size: 5.5rem;
+    font-size: 3.8rem;
   }
 
   .left-content li{
     font-size: 2rem;
   }
 
-  .form2{
-    width:80%;
-  
-  }
   
 
   footer p, h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   
   }
 
 }
 
 
-/* 
-@media screen and (481px <= width<=768px) {
-
-
-}
-
 @media screen and (320px <= width<=480px) {
 
+  .container-pdn{
+    padding: 0%;
+  }
 
+  .header-container{
+    display: block;
+    text-align: center;
+  }
+
+  .phone-number {
+    background-color: #0CAA41;
+    margin-top: 0%;  
+    font-size: 2rem; 
+  }
+
+  .est-form {
+    margin: 20px 30px;
+
+  }
+
+  form input {
+    width: 90%;
+    margin: 5px 10px;
+
+  }
+  .bi-telephone-fill{
+    color: var(--color-white-100);
+  }
+
+  .hero-content{
+    display: block;
+    padding-bottom: 15px;
+    overflow: hidden;
+    
+  }
+
+  .why-us {
+    height: 100vh;
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  .why-us  li{
+    font-size: 1.6rem;}
+
+  .why-us h2{
+    font-size: 3.8rem;
+  }
+  
+  .why-us h2 span{
+    font-size: 4.4rem;   
+  }
+
+
+  .est-form {
+    width: 80%;
+    margin: auto;
+
+  }
+
+  .est-form p{
+    font-size: 2rem;
+
+  }
+
+  .logo-section i{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+
+  .logo-section div h4{
+    font-size: 0.9rem;
+  }
+  
+
+  .service__header{
+    font-size: 3rem;
+  }
+
+  .why-us-content h2{
+    font-size: 3rem;
+    padding-top: 0px;
+  }
+
+  .testimonials h2{
+    font-size: 3rem;
+  }
+
+
+  .testimonials-container{
+    padding: 0% 10%  }
+
+
+  .why-us-cards-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.2rem;
+    width: 95vw;
+    padding: 5px 20px;
+  }
+
+  .why-us-content p{
+    font-size:0.9rem;
+
+  }
+  
+
+  .two-photos-section{
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+  .left-photo-section{
+    width: 100%;
+  }
+
+  .right-photo-section{
+    width: 100%;
+    
+
+  }
+
+  .right-photo-section .est-form{
+    width: 75%;
+    padding: 10px 20px;
+  }
+
+
+  .left-content h2{
+    font-size: 2.8rem;
+  }
+
+  .left-content li{
+    font-size: 2rem;
+  }
+
+  
+
+  footer p, h2 {
+    font-size: 1.5rem;
+  
+  }
 }
-
-
-*/
