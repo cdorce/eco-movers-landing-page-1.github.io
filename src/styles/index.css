@@ -8,24 +8,26 @@ body, h1, h2, p, ul {
 
 body, html {
   font-family: var(--font-2);
-  height: 100%;
   font-size: 62.5%;
+}
+
+.container-pdn{
+  padding: 0% 10%;
+
 }
   
 /* Basic styling for the header */
-header {
+.header-container {
   background-color: var(--color-dark-100);
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  
     
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .logo img {
-   width: 140px;
+  width: 140px;
   background-color: var(--color-white-50);
 }
 
@@ -35,8 +37,10 @@ header .container {
 
 }
 
-.phone-number img {
-  width: 20px;
+.bi-telephone-fill{
+  font-size: 30px;
+  color: #0a8834;
+
 }
 
 /* Styling for the hero section */
@@ -53,13 +57,12 @@ header .container {
 .hero-content {
   color: white;
   display: flex;
-  display: flex;
-  flex-direction: row;
+
 }
 
 .why-us h2 span{
   color:#0CAA41 ;
-  font-size: 80px;   
+  font-size: 7.4rem;   
 }
 
 .why-us {
@@ -67,6 +70,7 @@ header .container {
   backdrop-filter: blur(5px);
   padding: 90px 40px;  
   height: 100vh;
+  width: 50%;
 }
 
 
@@ -87,12 +91,7 @@ header .container {
 
 /* Style for the form in the hero section */
 
-form p {
-  font-size: 35px;
-  font-weight: 600;
-  text-align: center;
-  margin: 20px 0;
-}
+
 
 .est-form {
   background-color:var(--color-dark-100) ;
@@ -100,12 +99,20 @@ form p {
   border-radius: 5px;
   padding: 40px 10px;
   text-align: center;
-  height: 100%;
+  width: 30%;
+}
+
+form p {
+  font-size: 3.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  padding: 0px 20px;
 }
 
 
 form input {
-  width: 275px;
+  width: 80%;
   height: 35px;
   margin-bottom: 10px;
   border: 0px;
@@ -223,7 +230,7 @@ form #submit:hover {
 .service__header{
   text-align: center;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 6rem;
   padding-top: 3rem;
 }
 
@@ -281,14 +288,14 @@ form #submit:hover {
 
 .why-us-content{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .why-us-content h2{
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .why-us-content h2::after{
@@ -304,8 +311,9 @@ form #submit:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 6rem;
+  grid-gap: 5rem;
   margin-top: 6rem;
+  width: 80vw;
 }
 
 .card-container p{
@@ -329,7 +337,7 @@ form #submit:hover {
 .testimonials h2{
   text-align: center;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 6rem;
   padding-bottom: 10px;
 }
 
@@ -390,7 +398,7 @@ display: flex;
   background-color: #0CAA41;
   background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.5)), url("/src/img/packing-blur.png");
   width: 50%;
-  height: 60vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -400,22 +408,24 @@ display: flex;
   background-color: yellow;
   background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.5)), url("/src/img/truck-white-blur.png"); 
   width: 50%;
-  height: 60vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content:space-around ;
 }
 
 
 .left-content{
   color: var(--color-white-100);
-  width: 60%;
+  width: 70%;
   margin: auto;
   padding: auto;
 }
 .left-content h2{
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bolder;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .left-content span{
@@ -423,7 +433,7 @@ display: flex;
 }
 
 .left-content li {
-  font-size: 20px;
+  font-size: 25px;
   list-style: none;
   padding: 10px 40px;
   background-image: url('/src/icons/check-mark.png');
@@ -432,23 +442,17 @@ display: flex;
   background-size: 30px;  
   }
 
-.form2{
-  width: 35%;
-  height: 90%;
-  margin-left: 20%;
-  margin-top: 4%;
-  padding-top: 20PX;
-  overflow: hidden;
+  .right-photo-section .est-form{
+    width: 40%;
+    height: 550px;
+  }
 
-}
-
-
-.form2 p{
-  color: #fff;
-  font-size: 25px;
-}
-
-
+  .right-photo-section p{
+    font-size:30px;
+    color: var(--color-white-100); 
+    padding:10px;
+  }
+  
 /* Basic styling for the footer */
 footer {
   background-color: #000000;
@@ -459,20 +463,241 @@ footer {
 
 }
 
-footer p, h2 {
+
+footer p{
+  font-size: 3.5rem;
+}
+
+footer h2 {
   font-size: 4rem;
+  font-weight: bold;
 
 }
 
 /* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-      text-align: center;
+
+/* Styles will not apply outside (bigger screen than) of the set max width  */
+
+
+/*Desktops, large screens*/
+@media screen and (1025px <= width<=1400px) {
+
+
+  
+  .why-us h2{
+    font-size: 4rem;
   }
 
-  .estimate-form,
-  .company-highlights {
-      flex: 1 1 100%; /* Full width on smaller screens */
+  .why-us h2 span{
+    font-size: 4.4rem;   
   }
+
+  .est-form{
+    width: 40%;
+  }
+
+  .est-form p{
+    font-size: 2.5rem;
+  }
+  
+  .why-us  li{
+    font-size: 2rem;}
+
+
+
+  .left-content h2{
+    font-size: 4rem;
+  }
+
+  .right-photo-section .est-form{
+    width: 60%;
+
+  }
+  
+
+  footer p, h2 {
+    font-size: 2.5rem;
+  
+  }
+  
 }
+
+
+/*Small screens, laptops*/
+@media screen and (820px <= width<=1024px) {
+
+  .container-pdn{
+    padding: 0% 5%;
+  
+  }
+  .phone-number {
+    font-size: 2.5rem;
+  }
+
+  .why-us {
+    padding: 40px 30px;  
+    height: 100vh;
+  }
+
+  .why-us  li{
+    font-size: 1.8rem;}
+  
+  .why-us h2 span{
+    font-size: 40px;   
+  }
+
+  .est-form {
+    width: 50%;
+    padding: 40px 30px;
+    margin-right: 0px;
+  }
+
+  form p {
+    font-size: 30px;
+  }
+  
+  .logo-section i{
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  
+
+  .logo-section div h4{
+    font-size: 2rem;
+  }
+  
+  .why-us h2{
+    font-size: 4rem;
+  }
+  
+
+  .left-content h2{
+    font-size: 3rem;
+  }
+
+  .left-content li{
+    font-size: 2rem;
+  }
+
+  .right-photo-section{
+
+    justify-content:space-between ;}
+
+  .right-photo-section .est-form{
+    width: 75%;
+    padding: 10px 20px;
+  }
+
+  .right-photo-section .est-form p{
+    font-size: 2.3rem;
+  }
+  
+}
+
+
+/*481px — 768px: iPads, Tablets*/
+
+@media screen and (481px <= width<=819px) {
+
+  .container-pdn{
+    padding: 0%;
+  }
+  header {
+    display: block;
+    text-align: center;
+    
+  }
+
+  .phone-number {
+    background-color: #0CAA41;
+    
+  }
+
+  .est-form {
+    margin: 20px 30px;
+
+  }
+
+  form input {
+    width: 90%;
+    margin: 5px 10px;
+
+  }
+  .bi-telephone-fill{
+    color: var(--color-white-100);
+  }
+
+  .hero-content{
+    display: block;
+    padding-bottom: 20px;
+    overflow: hidden;
+    
+  }
+
+  .why-us {
+    height: 100vh;
+    margin-right: 30px;
+  }
+
+  .why-us  li{
+    font-size: 2rem;}
+
+  .why-us h2{
+    font-size: 4.8rem;
+  }
+  
+  .why-us h2 span{
+    font-size: 40px;   
+  }
+
+  .two-photos-section{
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+  .left-photo-section{
+    width: 100%;
+  }
+
+  .right-photo-section{
+    width: 100%;
+    
+
+  }
+
+  .left-content h2{
+    font-size: 5.5rem;
+  }
+
+  .left-content li{
+    font-size: 2rem;
+  }
+
+  .form2{
+    width:80%;
+  
+  }
+  
+
+  footer p, h2 {
+    font-size: 2.5rem;
+  
+  }
+
+}
+
+
+/* 
+@media screen and (481px <= width<=768px) {
+
+
+}
+
+@media screen and (320px <= width<=480px) {
+
+
+}
+
+
+*/
